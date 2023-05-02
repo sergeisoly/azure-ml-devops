@@ -8,3 +8,6 @@ def add(x):
 
 def subtract(x):
     return x - 1
+
+def root(x):
+    return x**0.5
