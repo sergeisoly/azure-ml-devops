@@ -5,8 +5,10 @@ install:
 test:
 	python -m pytest -vv test_hello.py
 
+format:
+	black .
 
 lint:
 	pylint --disable=R,C hello.py
 
-all: install lint test
+all: install format lint test
